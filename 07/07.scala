@@ -1,4 +1,4 @@
 object Main extends App {
   val inputArray = io.StdIn.readLine().split(' ')
-  inputArray.foreach(println)
+  inputArray.filterNot(_ == "0").foreach(println)
 }
